@@ -145,7 +145,7 @@ public class Main{
 	}
 	
 	public boolean verifChevaux(Voiture vehicule) {
-		if (vehicule.getnombreChevaux() <= 100) {
+		if (vehicule.getNombreChevaux() <= 100) {
 			return true; 
 		}
 		

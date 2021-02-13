@@ -14,7 +14,7 @@ public class Calendrier {
 	}
 	
 	public ArrayList<Jour> getJours(){
-		return this;
+		return this.jours;
 	}
 	
 	public void setJour(ArrayList<Jour> jours){

@@ -7,27 +7,27 @@ public class Jour {
 	private int numeroDeJour;
 	private String libelle ;
 	
-	public Jour(int numeroDeJour , String libelle ){
-		this.numeroDeJour =numeroDeJour;
-		this.libelle =libelle;
+	public Jour(int numeroDeJour, String libelle ){
+		this.numeroDeJour = numeroDeJour;
+		this.libelle = libelle;
 	}
 	
-	public int getnumeroDeJour(){
+	public int getNumeroDeJour(){
 		return this.numeroDeJour;
 	}
 	
 	
-	public void setnumeroDeJour(){
+	public void setNumeroDeJour(){
 		this.numeroDeJour = numeroDeJour;
 	}
 	
 	
-	public String getlibelle(){
+	public String getLibelle(){
 		return this.libelle;
 	}
 	
 	
-	public void setlibelle(){
+	public void setLibelle(){
 		this.libelle = libelle;
 	}
 	

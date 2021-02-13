@@ -16,7 +16,7 @@ public class Voiture {
 	
 	
 	
-	public Voiture (String nom, int nombreChevaux,int nombreDePorte,boolean hasCoffre) {
+	public Voiture (String nom, int nombreChevaux, int nombreDePorte, boolean hasCoffre) {
 		this.nom = nom;
 		this.nombreChevaux = nombreChevaux;
 		this.nombreDePorte = nombreDePorte;
@@ -27,7 +27,7 @@ public class Voiture {
 		return this.nom;
 	}
 	
-	public int getnombreChevaux() {
+	public int getNombreChevaux() {
 		return this.nombreChevaux;
 	}
 	 

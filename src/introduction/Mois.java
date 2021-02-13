@@ -7,30 +7,30 @@ public class Mois {
 	private String unLibelle;
 	private ArrayList<Jour> jours;
 	
-	public  Mois (int numeroDeMois,String unLibelle , ArrayList<Jour> jours){
+	public  Mois (int numeroDeMois, String unLibelle, ArrayList<Jour> jours){
 		this.numeroDeMois = numeroDeMois;
 		this.unLibelle = unLibelle;
-		this.jours= jours;
+		this.jours = jours;
 		
 	}
 	
-	public int GetnumeroDeMois() {
+	public int getNumeroDeMois(){
 		return this.numeroDeMois;
 	}
 	
 	
-	public void SetnumeroDeMois(){
+	public void setNumeroDeMois(){
 		this.numeroDeMois = numeroDeMois; 
 	}
 	
 	
-	public String GetunLibelle(){
+	public String getUnLibelle(){
 		return this.unLibelle;
 	}
 	
 	
-	public void SetunLibelle(){
-		this.unLibelle= unLibelle;
+	public void setUnLibelle(){
+		this.unLibelle = unLibelle;
 	}
 	
 	public ArrayList<Jour> GetJour(){
@@ -38,7 +38,7 @@ public class Mois {
 	}
 	
 	
-	public void Setjour(){
+	public void setJour(){
 		this.jours = jours;
 	}
 	

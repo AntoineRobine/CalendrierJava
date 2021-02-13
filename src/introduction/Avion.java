@@ -6,9 +6,7 @@ public class Avion {
 	private String laCompanie;
 	private String modele;
 	
-	
-	
-	public Avion(String marque,int nombreDeSiege,String laCompanie,String modele ) {
+	public Avion(String marque, int nombreDeSiege, String laCompanie, String modele){
 		this.marque = marque;
 		this.nombreDeSiege = nombreDeSiege ;
 		this.laCompanie = laCompanie;
@@ -25,12 +23,12 @@ public class Avion {
 	}
 	
 	
-	public String LaCompanie(){
+	public String getLaCompanie(){
 		return this.laCompanie;
 	}
 	
 	
-	public String Modele(){
+	public String getModele(){
 		return this.modele;
 	}
 	
@@ -42,8 +40,6 @@ public class Avion {
 			return false;
 		}
 	}
-	
-	
 	
 	@Override
 	public String toString(){

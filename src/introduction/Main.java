@@ -1,6 +1,8 @@
 package introduction;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;  // Import the Scanner class
 
 public class Main{
@@ -79,7 +81,7 @@ public class Main{
 		jours.add(mardi10);
 
 		Mois Fevrier = new Mois(2,"Fevrier",jours);
-		System.out.println(Fevrier.toStringJour());
+		//System.out.println(Fevrier.toStringJour());
 		
 		Jour Lundi10 = new Jour (10 ,"Lundi" );
 		Mois Decembre = new Mois (12,"Decembre",jours);
@@ -87,8 +89,8 @@ public class Main{
 		ArrayList<Mois> mois = new ArrayList<Mois>();
 		mois.add(Decembre);
 		
-		
 		Calendrier calendrier2020 = new Calendrier(jours,mois,2021);
+<<<<<<< HEAD
 		System.out.println(calendrier2020);
 		
 		
@@ -104,26 +106,38 @@ public class Main{
 		
 		
 		
+=======
+		//System.out.println(calendrier2020);
+>>>>>>> ebca931a9bb8bd312284c527851e40abbac8512f
 		
 		
+		//System.out.println(Lundi10.creeSemainesMois(31));
+		Main.bidon();
 		
-	
-	
-		
+		Prof p = new Prof("Drouet", "Steven", 20, 198, 1, "Informatique", true);
+		System.out.println(p.toString());
 	}
-		
+	
+	
+	public static void bidon() {
+		Date date = new Date();
+		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/YYYY HH:mm:ss");
+		String result = formatter.format(date);
+		System.out.println(result);
+	}
+	
+	
 	
 	 public int poly(int a, int b ,int c) {
 		int calcule = a*b*c ;
 		return calcule;		
-	}
+	 }
 	
 	 
 	 public int message(String msg) {
 		int longueur =msg.length();
 		return longueur ;
-	
-	}
+	 }
 
 	public int multiplication(int a, int b) {
 		int operation =a*b;
@@ -144,7 +158,6 @@ public class Main{
 		else {
 				return false;
 		}
-		
 	}
 	
 	public boolean verifChevaux(Voiture vehicule) {
@@ -155,28 +168,17 @@ public class Main{
 		else {
 			return false;	
 		}
-			
-	
-	
-	
-	
-	
 	}
 	
 	public boolean verifSiege(Avion vehiculeAerien){
 		if (vehiculeAerien.getNombreDeSiege()%2==0 ||vehiculeAerien.getNombreDeSiege() > 200) {
 			return true;
 		}
-	
-		
 		else {
 			return false;
 		}
 	}
-	
-	
-	}
-		
+}	
 			
 		
 

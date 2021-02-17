@@ -1,0 +1,10 @@
+package introduction;
+
+public class Prof extends Personne{
+
+	public Prof(String nom, String prenom, int age, int taille, int poids) {
+		super(nom, prenom, age, taille, poids);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

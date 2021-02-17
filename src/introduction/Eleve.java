@@ -19,8 +19,8 @@ public class Eleve extends Personne {
 	}
 	
 	
-	public void setUneClasse(){
-		this.uneClasse = uneClasse;
+	public void setUneClasse(String uneClasse){
+		this.uneClasse = uneClasse  ;
 	}
 	
 	

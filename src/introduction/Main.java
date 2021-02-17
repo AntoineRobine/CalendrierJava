@@ -93,7 +93,10 @@ public class Main{
 		
 		
 	System.out.println(Lundi10.creeSemainesMois(31));
-		
+	
+	Eleve eleve1 = new Eleve("Robine","Antoine",13,165,43,"4e3","leSport",false);
+	
+	System.out.println(eleve1.Imc2()); 
 	
 		
 		

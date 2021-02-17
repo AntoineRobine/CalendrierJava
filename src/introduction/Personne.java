@@ -9,7 +9,7 @@ public class Personne {
 	
 	
 	
-	public Personne(String nom,String prenom,int age,int taille,int poids ) {
+	public Personne(String nom, String prenom, int age, int taille, int poids ){
 		this.nom = nom;
 		this.prenom = prenom;
 		this.age = age;
@@ -46,7 +46,7 @@ public class Personne {
 	
 	public String dateDeNaissance(int annee){
 		int calcul1 = annee - this.age;
-		return this.prenom  + " " + " est né soit en " + calcul1 + " soit en " + (calcul1-1);			
+		return this.prenom  + " est né soit en " + calcul1 + " soit en " + (calcul1-1);			
 	}
 	
 	public int IMC(){
@@ -76,21 +76,6 @@ public class Personne {
 		
 		
 	}
-	
-		
-	
-	
-	
-			
-		
-	
-	
-		
-		
-		
-		
-
-	
 	
 	@Override
 	public String toString(){

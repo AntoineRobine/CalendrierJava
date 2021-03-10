@@ -99,22 +99,6 @@ public class Main{
 	}
 	
 	Eleve eleve1 = new Eleve("Robine","Antoine",13,165,43,"4e3","leSport",false);
-	
-	eleve1.setUneClasse("4eme6");
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
-		
-	}
 		
 	
 	 public int poly(int a, int b ,int c) {

@@ -24,5 +24,28 @@ public class Eleve extends Personne {
 	}
 	
 	
+	public String getMatierePrefere(){
+		return this.MatierePrefere;
+	}
+	
+	
+	public void setMatierePrefere(String MatierePrefere){
+		this.MatierePrefere = MatierePrefere;
+	}
+	
+	public boolean getRedoublement(){
+		return this.redoublement;
+	}
+	
+	public void setRedoublement (boolean redoublement){
+		this.redoublement = redoublement;
+	}
+	
+	
+	@Override
+	public String toString(){
+		return super.toString() +  "\nEleve [matiere Prefere = " + this.MatierePrefere + "maClasse =" + this.uneClasse + "]";
+	}
+	
 	
 }

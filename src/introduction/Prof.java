@@ -1,4 +1,4 @@
-package introduction;
+ package introduction;
 
 public class Prof extends Personne{
 	private String matiere;
@@ -14,11 +14,11 @@ public class Prof extends Personne{
 		return matiere;
 	}
 
-	public void setMatiere(String matiere) {
+	public void setMatiere(String matiere){
 		this.matiere = matiere;
 	}
 
-	public boolean isMain() {
+	public boolean isMain(){
 		return isMain;
 	}
 

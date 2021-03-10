@@ -87,7 +87,6 @@ public class Main{
 		ArrayList<Mois> mois = new ArrayList<Mois>();
 		mois.add(Decembre);
 		
-		
 		Calendrier calendrier2020 = new Calendrier(jours,mois,2021);
 		System.out.println(calendrier2020);
 		

@@ -97,7 +97,10 @@ public class Main{
 		Main.bidon();
 		
 		Prof p = new Prof("Drouet", "Steven", 20, 198, 1, "Informatique", true);
-		System.out.println(p.toString());
+		System.out.println(p.Imc2());
+		
+		p.setMatiere("Maths");
+		System.out.println(p.getMatiere());
 	}
 	
 	

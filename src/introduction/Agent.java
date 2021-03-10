@@ -5,7 +5,7 @@ public class Agent extends Personne {
 	private int salaire;
 
 	
-	public Agent(String nom, String prenom, int age, int taille, int poids,String role,int salaire) {
+	public Agent(String nom, String prenom, int age, int taille, int poids, String role, int salaire) {
 		super(nom, prenom, age, taille, poids);
 		this.role = role;
 		this.salaire = salaire;

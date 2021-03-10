@@ -3,6 +3,9 @@ package introduction;
 import java.util.ArrayList;
 import java.util.Scanner;  // Import the Scanner class
 
+import exception.AgeIllegalException;
+import exception.MoitieDeVieVecue;
+
 public class Main{
   
 	public static void main(String[] args){
@@ -72,7 +75,7 @@ public class Main{
 		String[] mois  = {"janvier","fevrier","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","decembre"}; 
 		Calendrier calendrier2021 = new Calendrier (jours,mois,2021);
 		System.out.println(calendrier2021.phraseBissextile());
-		*/
+
 		
 		Jour mardi10 = new Jour( 10,"mardi");
 		ArrayList<Jour> jours = new ArrayList<Jour>();
@@ -90,11 +93,21 @@ public class Main{
 		Calendrier calendrier2020 = new Calendrier(jours,mois,2021);
 		System.out.println(calendrier2020);
 		
-		Prof p = new Prof("Drouet", "Steven", 20, 198, 1, "Informatique", true);
-		System.out.println(p.Imc2());
 		
 		p.setMatiere("Maths");
-		System.out.println(p.getMatiere());
+		System.out.println(p.getMatiere());*/
+		
+		Prof steven = new Prof("Drouet", "Steven", 50, 168, 80, "Informatique", true);
+		
+		try {
+			steven.checkAge();
+		}
+		catch(AgeIllegalException e) {
+			System.out.println(e.toString());
+		}
+		catch(MoitieDeVieVecue e) {
+			System.out.println(e.toString());
+		}	
 	}
 	
 	Eleve eleve1 = new Eleve("Robine","Antoine",13,165,43,"4e3","leSport",false);

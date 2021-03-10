@@ -1,5 +1,8 @@
 package introduction;
 
+import exception.AgeIllegalException;
+import exception.MoitieDeVieVecue;
+
 public class Personne {
 	private String nom;
 	private String prenom;
@@ -73,6 +76,42 @@ public class Personne {
 			return d;
 		}
 	}
+	
+	
+	public void checkAge() throws AgeIllegalException, MoitieDeVieVecue{
+		if(this.age > 3 && this.age < 100) {
+			System.out.println("Tu as l'âge pour être ici.");
+		}
+		else {
+			throw new AgeIllegalException("C'est illégal Monsieur, partez svp.");
+		}
+		
+		if(this.age == 50) {
+			throw new MoitieDeVieVecue("Bien joué, t'as vécu la moitié de ta vie !");
+		}
+	}
+	
+	/**
+	 * Vérifie si le nom est en majuscule 
+	 * ex: "ROBINE"
+	 * Si ça ne l'est pas, on lancera l'excption "NotGoodNameFormatException"
+	 * Si ça l'est, on affiche "Ton nom est ok"
+	 */
+	public void isUppercase() {
+		
+	}
+	
+	
+	/**
+	 * Vérifie si la première lettre du prénom est en majuscule 
+	 * ex : "Antoine"
+	 * Si ça ne l'est pas, on lancera l'excption "NotGoodFirstnameFormatException"
+	 * Si ça l'est, on affiche "Ton prénom est ok"
+	 */
+	public void isFirstCaracterUpper() {
+		
+	}
+	
 	
 	@Override
 	public String toString(){

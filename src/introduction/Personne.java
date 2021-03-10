@@ -14,7 +14,6 @@ public class Personne {
 		this.age = age;
 		this.taille = taille;
 		this.poids = poids;
-		
 	}
 	
 	

@@ -90,26 +90,14 @@ public class Main{
 		Calendrier calendrier2020 = new Calendrier(jours,mois,2021);
 		System.out.println(calendrier2020);
 		
+		Prof p = new Prof("Drouet", "Steven", 20, 198, 1, "Informatique", true);
+		System.out.println(p.Imc2());
 		
-	System.out.println(Lundi10.creeSemainesMois(31));
+		p.setMatiere("Maths");
+		System.out.println(p.getMatiere());
+	}
 	
 	Eleve eleve1 = new Eleve("Robine","Antoine",13,165,43,"4e3","leSport",false);
-	
-	eleve1.setUneClasse("4eme6");
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
-		
-	}
 		
 	
 	 public int poly(int a, int b ,int c) {

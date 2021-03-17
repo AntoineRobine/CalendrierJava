@@ -97,7 +97,13 @@ public class Personne {
 	 * Si ça ne l'est pas, on lancera l'excption "NotGoodNameFormatException"
 	 * Si ça l'est, on affiche "Ton nom est ok"
 	 */
-	public void isUppercase() {
+	public void isUppercase()thorws NomIllegalException,PrenomIllegalExcetion {
+		if (c != 'a' || c != 'b' || ...){
+			liste.add("tu as pas une majuscule");
+		}
+				
+		
+	  
 		
 	}
 	
